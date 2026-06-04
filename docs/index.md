@@ -1,11 +1,10 @@
-# DnaRna
+# DnaRna Documentation
 
-<script setup>
-import { inBrowser, withBase } from "vitepress";
+Choose a documentation language:
 
-if (inBrowser) {
-  window.location.replace(withBase("/en/"));
-}
-</script>
+- [English Documentation](./en/)
+- [中文文档](./zh/)
 
-Redirecting to the documentation site.
+DnaRna is an open-source model and command-line workflow for predicting potential DNA-RNA interactions.
+
+DnaRna 是一个用于预测 DNA-RNA 潜在互作的开源模型与命令行流程。
