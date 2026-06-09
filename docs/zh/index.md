@@ -28,3 +28,22 @@ python -m dnarna.models.pair.predict.infer --help
 ```bash
 bash scripts/pipeline-template.sh
 ```
+
+## 可选图形界面
+
+DnaRna 也包含一个可选的 Streamlit 界面，用于交互式提交预测任务：
+
+Streamlit 图形界面是同一套命令行预测流程的交互式封装，适合小到中等规模任务试跑。对于超大规模任务、服务器后台运行或需要精细控制参数的场景，建议直接使用命令行 pipeline。
+
+```bash
+uv pip install .
+uv run streamlit run src/dnarna/app/streamlit_app.py
+```
+
+默认本地访问地址为：
+
+```text
+http://localhost:8501
+```
+
+任务运行期间需要保持 Streamlit 进程存活。停止该进程会中断正在运行的任务。
